@@ -1,5 +1,5 @@
 <template>
-  <div class="about__description">
+  <section class="about__description">
     <h2 class="about__description-title">
       <span>Lorem ipsum dolor sit amet.</span>
       <small>Lorem ipsum dolor sit.</small>
@@ -10,23 +10,33 @@
       <p>3Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem sequi a praesentium expedita delectus officia, earum harum enim repudiandae. Id ullam, beatae sapiente debitis placeat cupiditate molestias eos eveniet illo voluptate! Minima sapiente blanditiis quasi.</p>
       <p>4Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque perferendis est, ullam, excepturi praesentium saepe quam similique libero, officia quo modi!</p>
     </div>
-  </div>
+  </section>
 </template>
 
 <style lang="postcss" scoped>
-.about {
-  &__description {
-    &-title {
-      small {
-        display: block;
-      }
+@import '@/assets/styles/variables.css';
+
+.about__description {
+  max-width: var(--width-container-size);
+  padding: 0 20px;
+  margin: 0 auto;
+  margin-bottom: var(--gap-6);
+  &-title {
+    margin-bottom: var(--gap-3);
+    font-size: var(--font-size-section-title);
+    font-weight: bold;
+    line-height: normal;
+    small {
+      display: block;
+      font-weight: normal;
     }
-    &-grid {
-      columns: 2;
-      column-gap: 2em;
-      p:first-of-type {
-        margin-top: 0;
-      }
+  }
+  &-grid {
+    columns: 2;
+    column-gap: 2em;
+    font-size: var(--font-size-l);
+    p:first-of-type {
+      margin-top: 0;
     }
   }
 }

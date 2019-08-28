@@ -1,5 +1,5 @@
 <template>
-  <div class="about__history">
+  <section class="about__history">
     <div class="history">
       <div class="history-navigation">
         <div class="history-navigation-prev">
@@ -44,7 +44,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script lang="ts">
@@ -151,16 +151,48 @@ export default Vue.extend({
 </script>
 
 <style lang="postcss" sscoped>
-.history {
-  &-navigation {
-  }
-  &-container {
-    display: flex;
-    h2 {}
-    ul {
-      columns: 12em;
-      column-gap: 2em;
-      .active {}
+@import '@/assets/styles/variables.css';
+
+.about__history {
+  margin-bottom: 240px;
+  color: var(--c-black);
+  .history {
+    &-navigation {
+      display: flex;
+      &-prev {
+        margin-left: auto;
+      }
+    }
+    &-container {
+      display: flex;
+      overflow: hidden;
+      border-bottom-color: var(--c-vue-green);
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+      h2 {
+        margin-bottom: var(--gap-5);
+        font-size: 80px;
+        line-height: 60px;
+        color: var(--c-vue-green);
+      }
+      div[class^='history-year-'] {
+        min-width: 300px;
+        padding-right: var(--gap-3);
+        padding-bottom: var(--gap-3);
+        padding-left: var(--gap-3);
+        margin-left: 80px;
+        border-left-color: var(--c-vue-green);
+        border-left-style: solid;
+        border-left-width: 1px;
+      }
+      h2 {}
+      ul {
+        column-width: 200px;
+        column-count: 2;
+        column-gap: 2em;
+        li {}
+        .active {}
+      }
     }
   }
 }
