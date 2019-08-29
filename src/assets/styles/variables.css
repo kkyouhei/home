@@ -49,5 +49,28 @@
   /**
    * Width
    * --------------------------------------------------------------------- */
-   --width-container-size: 980px;
+  --width-container-size: 980px;
+
+  /**
+   * font-size
+   * --------------------------------------------------------------------- */
+  --font-size-page-title: 40px;
+  --font-size-page-description: 30px;
+  --font-size-section-title: 36px;
+  --font-size-section-description: 20px;
+  --font-size-area-title: 22px;
+  --font-size-area-description: 18px;
+  --font-size-l: 18px;
+  --font-size-m: 16px;
+  --font-size-s: 14px;
+
+  /**
+   * padding margin
+   * --------------------------------------------------------------------- */
+  --gap-1: 8px;
+  --gap-2: 16px;
+  --gap-3: 32px;
+  --gap-4: 42px;
+  --gap-5: 64px;
+  --gap-6: 104px;
 }
