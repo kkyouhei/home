@@ -19,3 +19,9 @@ h1{
   max-width: var(--width-container-size);
   margin: 0 auto;
 }
+
+.u-card {
+  padding: var(--gap-3);
+  background-color: var(--c-white);
+  box-shadow: var(--shadow-depth-5);
+}
